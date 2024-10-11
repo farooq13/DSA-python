@@ -1,2 +1,2 @@
 # Data Structure and Algorithms
-Data structure and Algorithms learning journey.
+Challenging myself to be consistent in learning DSA
