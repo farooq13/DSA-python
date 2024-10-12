@@ -1,10 +1,5 @@
 from array import *
 
+a = array('i', [1, 2, 3, 4, 5])
 
-myarr = array('d', [1.1, 2.2, 3.3])
-myarr.extend([4.4, 5.5])
-
-count = 0
-while count < myarr[2]:
-  print(count)
-  count += 1
+print(a[::-1])
