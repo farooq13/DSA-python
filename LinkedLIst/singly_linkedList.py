@@ -1,3 +1,4 @@
+# LinkedList 1 : inset at the end of a linkedList
 class Node:
   def __init__(self, data):
     self.data = data
@@ -7,7 +8,7 @@ class LinkedList:
   def __init__(self):
     self.head = None
 
-  def insert(self, newNode):
+  def insertEnd(self, newNode):
     if self.head is None:
       self.head = newNode
     else:
@@ -17,23 +18,20 @@ class LinkedList:
       lastNode.next = newNode
 
   def printList(self):
-    if self.head is None:
-      print('The list is empty')
-      return
     currentNode = self.head
     while currentNode:
       print(currentNode.data)
       currentNode = currentNode.next
 
 
-firstNode = Node('Faruk')
+firstNode = Node('John')
 linkedList = LinkedList()
-# linkedList.insert(firstNode)
+linkedList.insertEnd(firstNode)
 
-secondNode = Node('Idris')
-# linkedList.insert(secondNode)
+secondNode = Node('Ben')
+linkedList.insertEnd(secondNode)
 
-thirdNode = Node('Abdulkadir')
-# linkedList.insert(thirdNode)
+thirdNode = Node('Robot')
+linkedList.insertEnd(thirdNode)
 
 linkedList.printList()
