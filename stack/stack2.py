@@ -28,9 +28,7 @@ s = Stack()
 s.push(5)
 s.push(4)
 s.push(3)
-print(s)
-
+s.peek()
+print(s.peek())
 s.pop()
-print(s)
-
-print(s)
+print(s.peek())
